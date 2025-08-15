@@ -40,10 +40,26 @@ console.log(replacing.replace("Ahmad", true));
 console.log(replacing.replace("Ahmad", 10));
 
 
-// .........  split() : Used to replace a specific portion with another something other
-let spliting = "Israr Ahmad"
-console.log(spliting.split("Atal"));
+// .........  split() : Use to split/separate a string using a specific separator and convert it into an array(return an array)
+// split(separator, limit)
+// separator = kis character/string k basis pe separate krna hai : i.e " ", ".", "," etc
+// limit(optional) = maximum kithne pieces chahye | How much pieces you want
 
-// .........  toUpperCase()
+let spliting = "Israr Ahmad Tech"
+console.log(spliting.split(" ")); // [ 'Israr', 'Ahmad', 'Tech' ]
+
+let spliting2 = "Israr,Ahmad,Tech"
+console.log(spliting2.split(",")); // [ 'Israr', 'Ahmad', 'Tech' ] : separtor is ignored/not counted
+
+// split every character
+let name = "israr"
+console.log(name.split("")); // [ 'i', 's', 'r', 'a', 'r' ]
+
+// How to use limit:
+let fruits = "apple,banana,cherry,kabop"
+console.log(fruits.split(",", 2)); // [ 'apple', 'banana' ]
+
+
+// .........  toUpperCase() : Converts a string into upper-case
 let capital = "Israr Ahmad"
 console.log(capital.toUpperCase());
