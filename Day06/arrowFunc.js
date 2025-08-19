@@ -29,6 +29,15 @@ const printName = name => console.log(`My name is ${name}`); // This is the real
 printName("Israr") // My name is Israr
 
 
-const sum = (a, b) => {
-
+const sum = (a, b) => { // You need to wrape multiple parameters in paranthesis
+    return a + b
 }
+console.log(sum(10, 20)); // 30
+
+
+// ..................  Optional Parameter values  ....................
+const intro = (name, skill = "student") => { // skill will take default value if not passed
+    console.log(`My name is ${name} & I am a ${skill}`);
+}
+intro("Israr") // My name is Israr & I am a student
+intro("Israr", "Web Developer") // My name is Israr & I am a Web Developer

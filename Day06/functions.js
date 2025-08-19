@@ -51,6 +51,14 @@ function sub(a, b) { // a & b ==== parameters
 sub(10, 20) // 10, 20 === arguments
 
 
+// ..................  Optional Parameter values  ....................
+function intro (name, age = 18) { // age will take default value if not passed
+    console.log(`My name is ${name} & I am ${age}`);
+}
+intro("Israr") // My name is Israr & I am 18
+intro("Israr", 20) // My name is Israr & I am a 20
+
+
 // - **Mini Task:** Create a function to calculate BMI ...................
 function bmiCalculator(weight, height){
     let heightInMeters = height * 0.3048
